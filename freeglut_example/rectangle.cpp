@@ -35,7 +35,19 @@ void Circle::display()
     glEnd();
     glPopMatrix();
 }
-
+void Triangle::display()
+{
+    glPushMatrix();
+    glTranslatef(x, y, 0);
+    glRotatef(angle, 0, 0, 1);
+    glColor3f(red, green, blue);
+    glBegin(GL_POLYGON);
+    glVertex2f(-side_length / 2, -side_length / (2 * sqrt(3))); // Bottom-left
+    glVertex2f(side_length / 2, -side_length / (2 * sqrt(3)));  // Bottom-right
+    glVertex2f(0, side_length / sqrt(3));                       // Top
+    glEnd();
+    glPopMatrix();
+}
 void Rectangle::display()
 {
     glPushMatrix();

@@ -50,6 +50,27 @@ public:
 };
 
 /**
+ * @class Triangle
+ * @brief Derived class representing a triangle, inheriting from the Figure class.
+ */
+class Triangle : public Figure
+{
+    float side_length; //!< Length of each side of the triangle.
+
+public:
+    /**
+     * @brief Constructor for the Triangle class.
+     * @param side Length of each side of the triangle.
+     */
+    Triangle(float side);
+
+    /**
+     * @brief Function to display the triangle.
+     */
+    void display();
+};
+
+/**
  * @class Circle
  * @brief Derived class representing a circle, inheriting from the Figure class.
  */
