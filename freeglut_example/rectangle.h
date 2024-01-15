@@ -28,7 +28,9 @@ public:
      * @brief Constructor for the Figure class.
      * @param angle Initial rotation angle in degrees.
      */
-    Figure(float angle = 0);
+    Figure(float angle = 0)
+        : angle(angle)
+    {}
 
     /**
      * @brief Moves the object by a specified vector.
@@ -62,7 +64,9 @@ public:
      * @brief Constructor for the Triangle class.
      * @param side Length of each side of the triangle.
      */
-    Triangle(float side);
+    Triangle(float side)
+        : side_length(side)
+    {}
 
     /**
      * @brief Function to display the triangle.
@@ -83,7 +87,9 @@ public:
      * @brief Constructor for the Circle class.
      * @param r Radius of the circle.
      */
-    Circle(float r = 0.5);
+    Circle(float r = 0.5)
+        : radius(r)
+    {}
 
     /**
      * @brief Function to display the circle.
@@ -102,27 +108,14 @@ class Rectangle : public Figure
 
 public:
     /**
-     * @brief Default constructor for the Rectangle class.
-     */
-    Rectangle();
-
-    /**
-     * @brief Constructor for the Rectangle class with a scale factor.
-     * @param scale Scale factor to determine width and height.
-     */
-    Rectangle(float scale);
-
-    /**
      * @brief Constructor for the Rectangle class with specified width and height.
      * @param width Width of the rectangle.
      * @param height Height of the rectangle.
      */
-    Rectangle(float width, float height);
-
-    /**
-     * @brief Destructor for the Rectangle class.
-     */
-    ~Rectangle();
+    Rectangle(float width = 0, float height = 0)
+        : width(width)
+        , height(height)
+    {}
 
     /**
      * @brief Function to resize the rectangle.

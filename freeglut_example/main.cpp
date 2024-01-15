@@ -54,6 +54,11 @@ void key(unsigned char _key, int _x, int _y)
     case 'c':
         figs_.emplace_back(new Circle((2 + rand() % 8) / 20.0));
         break;
+
+    case 't':
+        figs_.emplace_back(new Triangle((2 + rand() % 8) / 20.0));
+        break;
+
     case '+':
         active_idx++;
         if (active_idx >= figs_.size())
