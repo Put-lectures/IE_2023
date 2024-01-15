@@ -6,14 +6,15 @@
 #include <vector>
 using namespace std;
 
-vector<Rectangle> rects;
+vector<Figure *> figs;
+
 int active_idx = -1;
 void repaint(void)
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glPushMatrix();
-    for (auto &el : rects)
-        el.display();
+    for (auto &el : figs)
+        el->display();
 
     glPopMatrix();
 
@@ -25,35 +26,38 @@ void key(unsigned char _key, int _x, int _y)
     case 27: //escape pressed
         exit(0);
     case 'a': // 'a' was pressed
-        rects[active_idx].move(-0.1, 0);
+        figs[active_idx]->move(-0.1, 0);
 
         break;
     case 'd': // 'a' was pressed
-        rects[active_idx].move(0.1, 0);
+        figs[active_idx]->move(0.1, 0);
         break;
     case 'w': // 'a' was pressed
-        rects[active_idx].move(0, 0.1);
+        figs[active_idx]->move(0, 0.1);
         break;
     case 's': // 'a' was pressed
-        rects[active_idx].move(0, -0.1);
+        figs[active_idx]->move(0, -0.1);
         break;
 
     case '[': // 'a' was pressed
-        rects[active_idx].rotate(-1);
+        figs[active_idx]->rotate(-1);
         break;
 
     case ']': // 'a' was pressed
-        rects[active_idx].rotate(1);
+        figs[active_idx]->rotate(1);
         break;
 
     case 'n':
-        rects.emplace_back(Rectangle(0.5, (2 + rand() % 8) / 10.0));
-        active_idx = rects.size() - 1;
+        figs.emplace_back(new Rectangle(0.5, (2 + rand() % 8) / 10.0));
+        active_idx = figs.size() - 1;
+        break;
+    case 'c':
+        figs.emplace_back(new Circle((2 + rand() % 8) / 20.0));
         break;
     case '+':
         active_idx++;
-        if (active_idx >= rects.size())
-            active_idx = rects.size() - 1;
+        if (active_idx >= figs.size())
+            active_idx = figs.size() - 1;
         break;
     case '-':
         active_idx--;
