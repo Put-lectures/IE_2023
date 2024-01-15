@@ -1,0 +1,4 @@
+<map id="Rectangle" name="Rectangle">
+<area shape="rect" id="node1" title="Derived class representing a rectangle, inheriting from the Figure class." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node2" href="$class_figure.html" title="Base class representing a geometric figure with common properties and methods." alt="" coords="17,5,80,32"/>
+</map>

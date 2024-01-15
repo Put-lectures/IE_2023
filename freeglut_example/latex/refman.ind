@@ -1,0 +1,37 @@
+\begin{theindex}
+
+  \item {Circle}, \hyperpage{5}
+    \subitem {Circle}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Figure}, \hyperpage{6}
+    \subitem {Figure}, \hyperpage{7}
+    \subitem {move}, \hyperpage{8}
+    \subitem {rotate}, \hyperpage{8}
+
+  \indexspace
+
+  \item {getWidth}
+    \subitem {Rectangle}, \hyperpage{10}
+
+  \indexspace
+
+  \item {move}
+    \subitem {Figure}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Rectangle}, \hyperpage{8}
+    \subitem {getWidth}, \hyperpage{10}
+    \subitem {Rectangle}, \hyperpage{10}
+    \subitem {setWidth}, \hyperpage{11}
+  \item {rotate}
+    \subitem {Figure}, \hyperpage{8}
+
+  \indexspace
+
+  \item {setWidth}
+    \subitem {Rectangle}, \hyperpage{11}
+
+\end{theindex}

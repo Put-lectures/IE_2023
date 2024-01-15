@@ -1,0 +1,118 @@
+\hypertarget{class_figure}{}\doxysection{Figure Class Reference}
+\label{class_figure}\index{Figure@{Figure}}
+
+
+Base class representing a geometric figure with common properties and methods.  
+
+
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+
+
+Inheritance diagram for Figure\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_figure__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_figure_a571174d3a75927448dfd8f31fe8d1ba5}{Figure}} (float \mbox{\hyperlink{class_figure_a49b9d0023b419927cc517a83a584c656}{angle}}=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_figure}{Figure}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_figure_a1110fba400a72040ccd7ad1600aea403}{move}} (float dx, float dy)
+\begin{DoxyCompactList}\small\item\em Moves the object by a specified vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_figure_af589e559843f2896d93672bdf7172664}{rotate}} (float dalpha)
+\begin{DoxyCompactList}\small\item\em Rotates the figure by a specified angle in degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_figure_acf206e8663ac101881f693cc20f8689e}\label{class_figure_acf206e8663ac101881f693cc20f8689e}} 
+virtual void \mbox{\hyperlink{class_figure_acf206e8663ac101881f693cc20f8689e}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to display the figure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_figure_a49b9d0023b419927cc517a83a584c656}\label{class_figure_a49b9d0023b419927cc517a83a584c656}} 
+float \mbox{\hyperlink{class_figure_a49b9d0023b419927cc517a83a584c656}{angle}} = 0
+\begin{DoxyCompactList}\small\item\em Rotation angle in degrees. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_figure_aa120f6605192cd8034103aa6d64e047a}\label{class_figure_aa120f6605192cd8034103aa6d64e047a}} 
+float {\bfseries x} = 0
+\item 
+\mbox{\Hypertarget{class_figure_ac7641ac31d0f1fcb9dcde078b03cea78}\label{class_figure_ac7641ac31d0f1fcb9dcde078b03cea78}} 
+float {\bfseries y} = 0
+\item 
+\mbox{\Hypertarget{class_figure_ac744b9a0c14eab67e11ffa1b674d1507}\label{class_figure_ac744b9a0c14eab67e11ffa1b674d1507}} 
+float \mbox{\hyperlink{class_figure_ac744b9a0c14eab67e11ffa1b674d1507}{red}} = 1
+\begin{DoxyCompactList}\small\item\em Color components in the range $<$0;1$>$. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_figure_a17300ef8af37381ee45e0aec1626d69d}\label{class_figure_a17300ef8af37381ee45e0aec1626d69d}} 
+float {\bfseries green} = 1
+\item 
+\mbox{\Hypertarget{class_figure_a1da2c10e10d0b47224ce7ae9863ee1c7}\label{class_figure_a1da2c10e10d0b47224ce7ae9863ee1c7}} 
+float {\bfseries blue} = 0
+\item 
+\mbox{\Hypertarget{class_figure_ad6dfea00fe3963b552af2704d35ec5c4}\label{class_figure_ad6dfea00fe3963b552af2704d35ec5c4}} 
+bool {\bfseries is\+\_\+visible} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class representing a geometric figure with common properties and methods. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_figure_a571174d3a75927448dfd8f31fe8d1ba5}\label{class_figure_a571174d3a75927448dfd8f31fe8d1ba5}} 
+\index{Figure@{Figure}!Figure@{Figure}}
+\index{Figure@{Figure}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{Figure()}{Figure()}}
+{\footnotesize\ttfamily Figure\+::\+Figure (\begin{DoxyParamCaption}\item[{float}]{angle = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_figure}{Figure}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & Initial rotation angle in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_figure_a1110fba400a72040ccd7ad1600aea403}\label{class_figure_a1110fba400a72040ccd7ad1600aea403}} 
+\index{Figure@{Figure}!move@{move}}
+\index{move@{move}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Figure\+::move (\begin{DoxyParamCaption}\item[{float}]{dx,  }\item[{float}]{dy }\end{DoxyParamCaption})}
+
+
+
+Moves the object by a specified vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dx} & The change in the x-\/coordinate. \\
+\hline
+{\em dy} & The change in the y-\/coordinate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_figure_af589e559843f2896d93672bdf7172664}\label{class_figure_af589e559843f2896d93672bdf7172664}} 
+\index{Figure@{Figure}!rotate@{rotate}}
+\index{rotate@{rotate}!Figure@{Figure}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Figure\+::rotate (\begin{DoxyParamCaption}\item[{float}]{dalpha }\end{DoxyParamCaption})}
+
+
+
+Rotates the figure by a specified angle in degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dalpha} & The angle in degrees. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+rectangle.\+h\item 
+rectangle.\+cpp\end{DoxyCompactItemize}

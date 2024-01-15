@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_figure.html" title="Base class representing a geometric figure with common properties and methods." alt="" coords="5,31,68,57"/>
+<area shape="rect" id="node2" href="$class_circle.html" title="Derived class representing a circle, inheriting from the Figure class." alt="" coords="130,5,189,32"/>
+<area shape="rect" id="node3" href="$class_rectangle.html" title="Derived class representing a rectangle, inheriting from the Figure class." alt="" coords="116,56,203,83"/>
+</map>

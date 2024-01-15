@@ -1,0 +1,125 @@
+\hypertarget{class_rectangle}{}\doxysection{Rectangle Class Reference}
+\label{class_rectangle}\index{Rectangle@{Rectangle}}
+
+
+Derived class representing a rectangle, inheriting from the \mbox{\hyperlink{class_figure}{Figure}} class.  
+
+
+
+
+{\ttfamily \#include $<$rectangle.\+h$>$}
+
+
+
+Inheritance diagram for Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_rectangle__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rectangle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_rectangle__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}\label{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}} 
+\mbox{\hyperlink{class_rectangle_a8a933e0ebd9e80ce91e61ffe87fd577e}{Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{class_rectangle}{Rectangle}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rectangle_a0771e7f208b8920b6e6b3f572923f8f9}{Rectangle}} (float scale)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_rectangle}{Rectangle}} class with a scale factor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rectangle_a15349f1d2cce79568c89e9e2d6ac92df}{Rectangle}} (float width, float height)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_rectangle}{Rectangle}} class with specified width and height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}\label{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}} 
+\mbox{\hyperlink{class_rectangle_a494c076b13aadf26efdce07d23c61ddd}{$\sim$\+Rectangle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{class_rectangle}{Rectangle}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_rectangle_a65a5659f87c7097682285aa693dd24dc}\label{class_rectangle_a65a5659f87c7097682285aa693dd24dc}} 
+void \mbox{\hyperlink{class_rectangle_a65a5659f87c7097682285aa693dd24dc}{display}} ()
+\begin{DoxyCompactList}\small\item\em Function to resize the rectangle. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_rectangle_a3dc5863bdde58a3fd599eac5bc5761b1}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Getter function to retrieve the width of the rectangle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rectangle_addb145886c137e7d5a9dfe13cb3c6c11}{set\+Width}} (float new\+Width)
+\begin{DoxyCompactList}\small\item\em Setter function to set a new width for the rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Derived class representing a rectangle, inheriting from the \mbox{\hyperlink{class_figure}{Figure}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rectangle_a0771e7f208b8920b6e6b3f572923f8f9}\label{class_rectangle_a0771e7f208b8920b6e6b3f572923f8f9}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{scale }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_rectangle}{Rectangle}} class with a scale factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & Scale factor to determine width and height. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rectangle_a15349f1d2cce79568c89e9e2d6ac92df}\label{class_rectangle_a15349f1d2cce79568c89e9e2d6ac92df}} 
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rectangle\+::\+Rectangle (\begin{DoxyParamCaption}\item[{float}]{width,  }\item[{float}]{height }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_rectangle}{Rectangle}} class with specified width and height. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the rectangle. \\
+\hline
+{\em height} & Height of the rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rectangle_a3dc5863bdde58a3fd599eac5bc5761b1}\label{class_rectangle_a3dc5863bdde58a3fd599eac5bc5761b1}} 
+\index{Rectangle@{Rectangle}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily float Rectangle\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter function to retrieve the width of the rectangle. 
+
+\begin{DoxyReturn}{Returns}
+Width of the rectangle in meters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_rectangle_addb145886c137e7d5a9dfe13cb3c6c11}\label{class_rectangle_addb145886c137e7d5a9dfe13cb3c6c11}} 
+\index{Rectangle@{Rectangle}!setWidth@{setWidth}}
+\index{setWidth@{setWidth}!Rectangle@{Rectangle}}
+\doxysubsubsection{\texorpdfstring{setWidth()}{setWidth()}}
+{\footnotesize\ttfamily void Rectangle\+::set\+Width (\begin{DoxyParamCaption}\item[{float}]{new\+Width }\end{DoxyParamCaption})}
+
+
+
+Setter function to set a new width for the rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Width} & New width of the rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+rectangle.\+h\item 
+rectangle.\+cpp\end{DoxyCompactItemize}
